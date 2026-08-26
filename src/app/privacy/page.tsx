@@ -11,7 +11,7 @@ export default function Privacy() {
         Politique de confidentialité
       </h1>
       <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-        Dernière mise à jour : 24 juillet 2026
+        Dernière mise à jour : 26 août 2026
       </p>
 
       <div className="mt-12 space-y-10 text-[var(--color-text-secondary)] leading-relaxed [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mb-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1">
@@ -114,7 +114,7 @@ export default function Privacy() {
         </section>
 
         <section>
-          <h2>Apple Health</h2>
+          <h2>Apple Health et Health Connect</h2>
           <p>
             Si vous choisissez d&apos;activer la synchronisation avec Apple
             Health, l&apos;application lit votre dépense énergétique active, vos
@@ -125,6 +125,23 @@ export default function Privacy() {
             et le magasin Santé de votre appareil. Aucune donnée Health
             n&apos;est envoyée à nos serveurs ni à un tiers, et vous pouvez
             révoquer l&apos;autorisation à tout moment dans les réglages iOS.
+          </p>
+          <p className="mt-3">
+            Sur Android, la même synchronisation passe par{" "}
+            <strong className="text-white">Health Connect</strong>.
+            L&apos;application lit votre dépense énergétique active, vos pas et
+            votre poids — y compris l&apos;historique de plus de 30 jours si
+            vous accordez cette autorisation — et écrit en retour votre poids,
+            votre nutrition (calories, protéines, glucides, lipides) et votre
+            hydratation. Ces données servent uniquement à afficher et
+            synchroniser votre journal dans l&apos;application. Cet échange a
+            lieu directement entre l&apos;application et Health Connect, sur
+            votre appareil. Aucune donnée Health Connect n&apos;est envoyée à
+            nos serveurs ni à un tiers, n&apos;est utilisée à des fins
+            publicitaires, ni vendue. Vous pouvez révoquer chaque autorisation à
+            tout moment depuis Health Connect, et la suppression de
+            l&apos;application ne supprime pas les données déjà écrites dans
+            Health Connect — vous en gardez le contrôle.
           </p>
         </section>
 
@@ -164,8 +181,9 @@ export default function Privacy() {
           <h2>Sécurité</h2>
           <p>
             Vos données étant stockées localement sur votre appareil, elles
-            bénéficient des protections de sécurité intégrées à iOS (chiffrement
-            du stockage, verrouillage de l&apos;appareil, etc.).
+            bénéficient des protections de sécurité intégrées à votre système,
+            iOS comme Android (chiffrement du stockage, verrouillage de
+            l&apos;appareil, etc.).
           </p>
         </section>
 
