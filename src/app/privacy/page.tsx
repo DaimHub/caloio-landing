@@ -11,7 +11,7 @@ export default function Privacy() {
         Politique de confidentialité
       </h1>
       <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-        Dernière mise à jour : 26 août 2026
+        Dernière mise à jour : 21 septembre 2026
       </p>
 
       <div className="mt-12 space-y-10 text-[var(--color-text-secondary)] leading-relaxed [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-white [&_h2]:mb-3 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1">
@@ -29,12 +29,12 @@ export default function Privacy() {
           <h2>Données collectées</h2>
           <p>
             CaloIO est une application &laquo;&nbsp;local-first&nbsp;&raquo;.
-            Elle n&apos;a ni compte utilisateur ni serveur. Toutes vos données
-            personnelles sont stockées{" "}
+            Elle ne nécessite aucun compte utilisateur. Votre journal, vos
+            photos et vos données de santé sont stockés{" "}
             <strong className="text-white">
               exclusivement sur votre appareil
             </strong>{" "}
-            et ne sont jamais envoyées vers nos serveurs.
+            et ne sont pas envoyés au service d&apos;analyse décrit ci-dessous.
           </p>
           <p className="mt-3">Les données stockées localement incluent :</p>
           <ul>
@@ -54,12 +54,14 @@ export default function Privacy() {
             Nous utilisons PostHog, un service d&apos;analyse hébergé dans
             l&apos;Union Européenne (eu.i.posthog.com), pour comprendre comment
             l&apos;application est utilisée et corriger les problèmes. Cette
-            collecte est{" "}
+            collecte est, pour une nouvelle installation iOS à partir de la
+            version 2.1.1,{" "}
             <strong className="text-white">
-              activée par défaut et désactivable à tout moment
+              désactivée par défaut et activable à votre choix
             </strong>{" "}
             dans Réglages &rsaquo; Confidentialité &rsaquo; Partager les données
-            d&apos;usage. La désactiver arrête immédiatement toute collecte.
+            d&apos;usage. La désactiver arrête les nouveaux envois. Une mise à
+            jour conserve le réglage déjà enregistré sur votre appareil.
           </p>
           <p className="mt-3">Les événements enregistrent :</p>
           <ul>
@@ -76,19 +78,32 @@ export default function Privacy() {
             </li>
             <li>
               Des informations techniques sur l&apos;appareil (modèle, version du
-              système).
+              système) et des catégories d&apos;erreurs permettant de corriger
+              les problèmes. À partir d&apos;iOS 2.1.1, les messages
+              d&apos;erreur et traces détaillées ne sont pas envoyés.
             </li>
           </ul>
           <p className="mt-3">
             Aucun nom, e-mail, numéro de téléphone, identifiant publicitaire ni
             localisation précise n&apos;est collecté. Les données d&apos;analyse
-            sont rattachées à un identifiant aléatoire, pas à votre identité.
+            sont rattachées à un identifiant aléatoire persistant de
+            l&apos;installation. Il permet de relier les événements d&apos;une
+            même installation, sans compte nominatif ni suivi publicitaire.
           </p>
           <p className="mt-3">
             <strong className="text-white">
               Enregistrements de session :
             </strong>{" "}
-            PostHog enregistre également les écrans que vous parcourez. Les
+            Dans iOS 2.1.1 et les versions suivantes, les enregistrements de
+            session sont désactivés, même lorsque le partage des données
+            d&apos;usage est activé.
+          </p>
+          <p className="mt-3">
+            <strong className="text-white">Anciennes versions :</strong>{" "}
+            les versions utilisant la collecte décrite dans notre politique du
+            26 août 2026 l&apos;activent par défaut, avec possibilité de la
+            désactiver dans les réglages. PostHog y enregistre également les
+            écrans que vous parcourez. Les
             écrans affichant des données de santé — saisie du poids, mensurations
             corporelles, photos de progression et questions de profil de
             l&apos;onboarding — sont masqués et n&apos;apparaissent pas dans ces
